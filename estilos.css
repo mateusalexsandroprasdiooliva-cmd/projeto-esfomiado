@@ -1,0 +1,217 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+body#corpo {
+	background: url("imagens/fundo.jpg");
+}
+header#cabecalho {
+	border-bottom: solid 2px gray;
+}
+article#conteudo {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+footer#rodape {
+	border-top: solid 2px gray;
+	text-align: center;
+}
+figure.outrasFotos {
+	/*border: solid 3px rgb(0,0,255);*/
+	background-color: lightgray;
+	text-align: center;
+	box-shadow: 0px 0px 20px #000000;
+	border-radius: 80px;
+}
+figure.foto1 {
+	background-color: lightblue;
+	box-shadow: 6px 6px 6px gray;
+	text-align: center;
+	border-radius: 10px;
+	border: solid 8px #000000;
+	width: 25%;
+	padding-top: 5px;
+	float: right;
+	transition: all 1.5s;
+}
+figure.foto1:hover {
+	transform: rotateZ(10deg);
+}
+figure.foto1 img {
+	width: 95%;
+	height: 150px;
+}
+figure.foto1 h4 {
+	margin-top: -4px;
+	margin-bottom: 0px;
+	background-color: yellow;
+}
+span.texto {
+	text-align: justify;
+	font-size: 16pt;
+	font-family: chilanka;
+	text-indent: 50px;
+}
+
+/*Formatação do menu principal*/
+
+nav#menu h3 {
+	display: none;
+}
+nav#menu ol {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0px;
+	right: 60px;
+}
+nav#menu li {
+	display: inline-block;
+	background-color: lightgray;
+	padding: 10px;
+	margin: 3px;
+	border-radius: 10px;
+	transition: background-color 2s, transform 1s;
+}
+nav#menu li:hover {
+	background-color: darkgray;
+	transform: rotateZ(-15deg);
+}
+nav#menu a {
+	color: black;
+	text-decoration: none;
+}
+nav#menu a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+/*Formatação dos títulos do article*/
+
+article#conteudo h1 {
+	background-color: #808080;
+	text-shadow: 2px 2px 2px #ffff00;
+	font-size: 25pt;
+	text-align: center;
+	transition: all 1s;
+}
+article#conteudo h1:hover {
+	letter-spacing: 30px;
+}
+
+/*Formatação do logo da Darpa*/
+
+header#cabecalho img.logo {
+	position: absolute;
+	top: 5px;
+	left: 3px;
+}
+hgroup.titulos h1 {
+	text-transform: uppercase;
+	/*text-decoration: underline;*/
+	font-size: 30pt;
+	letter-spacing: -20px;
+	border-radius: 20px;
+	width: 45%;
+	transition: all 2s;
+}
+hgroup.titulos h1:hover {
+	letter-spacing: 6px;
+	background-color: blue;
+	margin-left: 9px;
+	color: white;
+	box-shadow: 6px 6px 6px gray;
+}
+
+/*Formatação dos Ícones*/
+
+header#cabecalho img.icone {
+	position: absolute;
+	top: 70px;
+	right: 80px;
+}
+/*Formatação de texto/produtos*/
+
+span.texto p {
+	font-family: 'Sedgwick Ave Display', currive;
+}
+.sixseven {
+	display: flex;
+	gap: 40px;
+	flex: auto;
+}
+.sixseven2 {
+	flex: auto;
+	text-align: center;
+}
+.sixseven2 .yt {
+	border-radius: 20px;
+	border: #000000 solid 5px;
+	margin: 10px;
+	width: 100%
+}
+table.tabela {
+	border: solid 2px black;
+	border-radius: 20px;
+	background-color: lightgray;
+	text-align: center;
+	width: 100%;
+}
+.tabela thead {
+	border: solid 2px black;
+	background-color: gray;
+	border-radius: 20px;
+}
+.mapa1 {
+	border: solid 5px black;
+	border-radius: 20px;
+	width: 100%;
+}
+.six1 {
+	border:#000000 solid 5px;
+
+}
+.tabela-produtos {
+	border: solid 2px black;
+	border-radius: 20px;
+	background-color: lightgray;
+	text-align: center;
+	width: 10%;
+}
+/* bla ble bli*/
+ul.fotos {
+	max-width: 100%;
+	margin: auto;
+	padding: 50px;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 40px;
+}
+ul.fotos li {
+	width: 200px;
+	height: 300px;
+	border: 5px solid black;
+	font-family: arial;
+	text-align: center;
+	background: var(--img) center / cover no-repeat;
+	transition: all 1s ease;
+	position: relative;
+}
+ul.fotos li:hover {
+	background: var(--img-hover) center / cover no-repeat;
+	transform: scale(1.1);
+	border-radius: 40px;
+	z-index: 10;
+}
+ul.fotos li span {
+	opacity: 1;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-size: 8pt;
+	padding: 10px;
+	border-radius: 20px;
+	transition: opacity 1s;
+	display: flex;
+}
